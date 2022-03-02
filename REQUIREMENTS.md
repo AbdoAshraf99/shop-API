@@ -22,21 +22,27 @@ These are the notes from a meeting with the frontend developer that describe wha
 
 ## Data Shapes
 #### Product
--  id
-- name
-- price
-- [OPTIONAL] category
+-  id INT
+- name VARCHAR
+- price INT
+- [OPTIONAL] category VARCHAR
 
 #### User
-- id
-- firstName
-- lastName
-- password
+- id INT
+- firstName VARCHAR
+- lastName VARCHAR
+- password VARCHAR
 
 #### Orders
-- id
-- id of each product in the order
-- quantity of each product in the order
-- user_id
-- status of order (active or complete)
+- id INT
+- id of each product in the order INT
+- quantity of each product in the order INT
+- user_id INT
+- status of order (active or complete) VARCHAR
+
+### orders_products
+- id INT
+- product_id VARCHAR
+- order_id VARCHAR
+- quantity VARCHAR
 

@@ -4,6 +4,24 @@ Script needed:
     2- To start the project: npm run start
     3- To build the project: npm run build
     4- To run prettier : npm run prettier
+    
+before running any thinge you should first create DB
+Database creation:
+dev DB:
+    switch to the postgres user su postgres
+    start psql psql postgres
+    in psql run the following:
+    CREATE USER shopping_user WITH PASSWORD 'password123';
+    CREATE DATABASE shopping;
+    \c shopping
+    GRANT ALL PRIVILEGES ON DATABASE shopping TO shopping_user;
+test DB:
+    in psql run the following:
+    CREATE DATABASE shopping_test;
+    \c shopping_test
+    GRANT ALL PRIVILEGES ON DATABASE shopping_test TO shopping_user;  
+DB port:5432
+
 End Points:
     1-user
         1-user authorization:
